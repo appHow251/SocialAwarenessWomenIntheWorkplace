@@ -1,8 +1,10 @@
 <template>
   <div id="app">
+    <nav>
       <router-link v-bind:to="{name: 'Home'}">Home</router-link> |
       <router-link v-bind:to="{name: 'About'}">About</router-link> |
       <router-link v-bind:to="{name: 'Experiences'}">Experiences</router-link>
+      </nav>
     <router-view/>
   </div>
 </template>
@@ -27,8 +29,9 @@ a {
   color: blue;
 }
 
-#nav a.router-link-exact-active {
-  color: #06643a;
+nav a.router-link-exact-active {
+  text-decoration: none;
+  color: #be5f28;
 }
 
 
