@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link v-bind:to="{name: 'Home'}">Home</router-link> |
+      <router-link v-bind:to="{name: 'About'}">About</router-link> |
+      <router-link v-bind:to="{name: 'Experiences'}">Experiences</router-link>
     <router-view/>
   </div>
 </template>
@@ -20,17 +21,15 @@
   padding: 30px;
 }
 
-#nav a {
+a {
   font-weight: bold;
-  color: #2c3e50;
+  
+  color: blue;
 }
 
 #nav a.router-link-exact-active {
   color: #06643a;
 }
 
-a {
-  color: #06643a;
-  margin: 5px 10px 5 px 10
-}
+
 </style>
