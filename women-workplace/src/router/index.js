@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
-import Hobby from '../views/Experiences.vue'
+import NewExperience from '../views/NewExperience.vue'
 
 Vue.use(VueRouter)
 
@@ -18,9 +18,9 @@ const routes = [
     component: About
   },
   {
-    path: '/experiences',
-    name: 'Experiences',
-    component: Hobby
+    path: '/addExperience',
+    name: 'newExperience',
+    component: NewExperience 
   }
 ]
 
@@ -28,4 +28,4 @@ const router = new VueRouter({
   routes
 })
 
-export default router
+export default router;
