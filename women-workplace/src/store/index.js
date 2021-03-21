@@ -8,13 +8,23 @@ export default new Vuex.Store({
     experience: [
       {
         event: "Explained how to copy and paste",
-        where: "classroom project"
+        where: "classroom project",
+        result: "Felt condescending",
+        read: true
       }
     ]
   },
   mutations: {
     SAVE_EVENT(state, experiences) {
-      state.experience.push(experiences);
+      state.experience.unshift(experiences);
+    },
+
+    MARK_READ(state, event) {
+      event.read === true ? event.read === false : event.read = true;
+    },
+
+    FLIP_READ(state, readChange) {
+      readChange.read = ! readChange.read;
     }
   },
   actions: {

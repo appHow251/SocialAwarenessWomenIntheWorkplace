@@ -1,0 +1,189 @@
+[debug] [2021-03-06T03:35:31.011Z] ----------------------------------------------------------------------
+[debug] [2021-03-06T03:35:31.014Z] Command:       /usr/local/bin/firebase /Users/aprilhoward/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-03-06T03:35:31.015Z] CLI Version:   9.5.0
+[debug] [2021-03-06T03:35:31.015Z] Platform:      darwin
+[debug] [2021-03-06T03:35:31.015Z] Node Version:  v12.18.1
+[debug] [2021-03-06T03:35:31.017Z] Time:          Fri Mar 05 2021 22:35:31 GMT-0500 (Eastern Standard Time)
+[debug] [2021-03-06T03:35:31.017Z] ----------------------------------------------------------------------
+[debug] [2021-03-06T03:35:31.017Z] 
+[debug] [2021-03-06T03:35:31.029Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-06T03:35:31.029Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aprilhoward/Desktop/SocialAwareness/women-workplace
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-03-06T03:37:41.516Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-03-06T03:37:41.849Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-03-06T03:37:41.849Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project accessbrandywine (AccessBrandywine) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-03-06T03:38:38.210Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-06T03:38:38.211Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-06T03:38:38.366Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 06 Mar 2021 03:38:38 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-06T03:38:38.406Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/accessbrandywine/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-03-06T03:38:39.912Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:38:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-03-06T03:38:39.915Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/accessbrandywine/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-03-06T03:38:41.022Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:38:41 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-06T03:38:51.026Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/accessbrandywine/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-03-06T03:38:51.413Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:38:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-03-06T03:38:51.433Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/accessbrandywine/locations/-/instances/accessbrandywine  
+ 
+[debug] [2021-03-06T03:38:51.874Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:38:51 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-03-06T03:38:54.581Z] >>> HTTP REQUEST GET https://accessbrandywine.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2021-03-06T03:38:54.970Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 06 Mar 2021 03:38:54 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] ✔  Database Rules for accessbrandywine have been written to firebase init. 
+[info] Future modifications to firebase init will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2021-03-06T03:38:54.979Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/accessbrandywine/services/firestore.googleapis.com  
+ 
+[debug] [2021-03-06T03:38:55.381Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:38:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-06T03:38:55.382Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/accessbrandywine  
+ 
+[debug] [2021-03-06T03:38:55.770Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:38:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-06T03:38:55.770Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-03-06T03:38:55.778Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-06T03:38:55.779Z] > authorizing via signed-in user
+[debug] [2021-03-06T03:38:55.780Z] [iam] checking project accessbrandywine for permissions ["firebase.projects.get"]
+[debug] [2021-03-06T03:38:55.781Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/accessbrandywine:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-03-06T03:38:56.113Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:38:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=221","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-03-06T03:39:10.625Z] TypeError: Cannot read property 'setRawMode' of null
+    at ReadStream.setRawMode (tty.js:75:28)
+    at Interface._setRawMode (readline.js:290:16)
+    at Interface.close (readline.js:413:10)
+    at ReadStream.ontermend (readline.js:201:10)
+    at ReadStream.emit (events.js:327:22)
+    at ReadStream.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[debug] [2021-03-06T03:42:26.802Z] ----------------------------------------------------------------------
+[debug] [2021-03-06T03:42:26.805Z] Command:       /usr/local/bin/firebase /Users/aprilhoward/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-03-06T03:42:26.806Z] CLI Version:   9.5.0
+[debug] [2021-03-06T03:42:26.806Z] Platform:      darwin
+[debug] [2021-03-06T03:42:26.806Z] Node Version:  v12.18.1
+[debug] [2021-03-06T03:42:26.817Z] Time:          Fri Mar 05 2021 22:42:26 GMT-0500 (Eastern Standard Time)
+[debug] [2021-03-06T03:42:26.817Z] ----------------------------------------------------------------------
+[debug] [2021-03-06T03:42:26.817Z] 
+[debug] [2021-03-06T03:42:26.829Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-06T03:42:26.830Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aprilhoward/Desktop/SocialAwareness/women-workplace
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-03-06T03:42:52.041Z] > refreshing access token with scopes: []
+[debug] [2021-03-06T03:42:52.042Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-06T03:42:52.265Z] <<< HTTP RESPONSE 200 {"date":"Sat, 06 Mar 2021 03:42:52 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-06T03:42:52.283Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/accessbrandywine [none]
+[debug] [2021-03-06T03:42:52.510Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/accessbrandywine 200
+[debug] [2021-03-06T03:42:52.510Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/accessbrandywine {"projectId":"accessbrandywine","projectNumber":"849185551170","displayName":"AccessBrandywine","name":"projects/accessbrandywine","resources":{"hostingSite":"accessbrandywine","realtimeDatabaseInstance":"accessbrandywine","storageBucket":"accessbrandywine.appspot.com","locationId":"us-east1"},"state":"ACTIVE"}
+[info] i  Using project accessbrandywine (AccessBrandywine) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-03-06T03:42:52.522Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-06T03:42:52.522Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-06T03:42:52.632Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 06 Mar 2021 03:42:52 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-06T03:42:52.642Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/accessbrandywine/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-03-06T03:42:53.009Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:42:52 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-03-06T03:42:53.011Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/accessbrandywine/locations/-/instances/accessbrandywine  
+ 
+[debug] [2021-03-06T03:42:53.569Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:42:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-03-06T03:43:33.057Z] >>> HTTP REQUEST GET https://accessbrandywine.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2021-03-06T03:43:33.775Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sat, 06 Mar 2021 03:43:33 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] ✔  Database Rules for accessbrandywine have been written to firebase deploy. 
+[info] Future modifications to firebase deploy will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Functions Setup
+[info] 
+[info] A functions directory will be created in your project with a Node.js
+[info] package pre-configured. Functions can be deployed with firebase deploy.
+[info] 
+[debug] [2021-03-06T03:43:33.780Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-06T03:43:33.782Z] > authorizing via signed-in user
+[debug] [2021-03-06T03:43:33.782Z] [iam] checking project accessbrandywine for permissions ["firebase.projects.get"]
+[debug] [2021-03-06T03:43:33.782Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/accessbrandywine:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-03-06T03:43:33.983Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:43:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=141","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-06T03:43:33.985Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/accessbrandywine/services/cloudfunctions.googleapis.com:enable  
+ 
+[debug] [2021-03-06T03:43:33.985Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/accessbrandywine/services/runtimeconfig.googleapis.com:enable  
+ 
+[debug] [2021-03-06T03:43:34.339Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:43:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-06T03:43:34.363Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Mar 2021 03:43:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-07T13:40:01.161Z] TypeError: Cannot read property 'setRawMode' of null
+    at ReadStream.setRawMode (tty.js:75:28)
+    at Interface._setRawMode (readline.js:290:16)
+    at Interface.close (readline.js:413:10)
+    at ReadStream.ontermend (readline.js:201:10)
+    at ReadStream.emit (events.js:327:22)
+    at ReadStream.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1221:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)

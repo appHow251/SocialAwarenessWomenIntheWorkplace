@@ -21,8 +21,10 @@ const routes = [
     path: '/addExperience',
     name: 'newExperience',
     component: NewExperience 
-  }
-]
+  },
+
+
+];
 
 const router = new VueRouter({
   routes

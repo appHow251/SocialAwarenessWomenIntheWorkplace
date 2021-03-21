@@ -27,6 +27,7 @@ methods: {
             where: '',
             result: ''
         };
+        this.$route.push({name: "newExperience"});
     }
 }
    
@@ -38,6 +39,10 @@ methods: {
 }
 
 .new-experience-form input, .new-experience-form button {
+    margin: 10px;
+    font-size: 1rem;
+}
+.form {
     margin: 10px;
     font-size: 1rem;
 }
