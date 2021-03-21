@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="navbar">
     <nav>
       <router-link v-bind:to="{name: 'Home'}">Home</router-link> |
       <router-link v-bind:to="{name: 'About'}">About</router-link> |
@@ -8,6 +9,7 @@
     <router-view/>
  
   </nav>
+  </div>
    </div>
 
 </template>

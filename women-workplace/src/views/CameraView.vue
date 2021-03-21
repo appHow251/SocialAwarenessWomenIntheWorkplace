@@ -1,13 +1,11 @@
-// @change is the event listner that triggers
-// whenever the user selects a new file
-// and execute on the file selected
-// then add it in script in view instance in
-// the component with a methods object
+// @change is the event listner that triggers // whenever the user selects a new
+file // and execute on the file selected // then add it in script in view
+instance in // the component with a methods object
 
 <template>
-<div class="hello">
-    <input type="file" @change="onFileSelector">
-    </div>
+  <div class="hello">
+    <input type="file" @change="onFileSelector" />
+  </div>
 </template>
 
 <script>
@@ -44,7 +42,4 @@ export default {
             }
 
             }
-            
-            
-            
-            </script>
+</script>
